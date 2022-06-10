@@ -1,13 +1,65 @@
 /* Raleway */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* header */
 body {
   font-family: Raleway;
 }
-
-
-
-
+header {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #f9f9f9;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+nav {
+  width: 48%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  align-items: center;
+  letter-spacing: 0.3px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+}
+.boutonBlanc {
+  background-color: white;
+  border: 2px solid #2d96c8;
+  border-radius: 15px;
+  padding: 5px 15px 5px 15px;
+  color: #2d96c8;
+  font-weight: 800;
+}
+.boutonBleu {
+  background-color: #2d96c8;
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 8px 20px 8px 20px;
+  color: white;
+  font-weight: 800;
+}
+/* section1 */
+.section1 {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  background-image: url("../img/hero.png");
+  background-size: 55%;
+  background-repeat: no-repeat ;
+  background-attachment: scroll ;
+  background-position: top right 10px;
+}
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+  padding-top: 50px;
+  padding-left: 50px;
+}
 
 
 
