@@ -390,12 +390,14 @@ justify-content: center;
   justify-content: flex-end;
 }
 
-
+/* ////////\\\\\\\\ */
 /* section pour tel */
+/* \\\\\\\\//////// */
 .mobileOnly {
   display: none;
 }
 @media (max-width: 768px) {
+  /* header */
   header {
     display: flex;
     justify-content: flex-end;
@@ -405,22 +407,28 @@ justify-content: center;
     padding-right: 5%;
   }
   .mobileOnly {
-    display: block;
+    display: flex;
   }
   nav {
     display: none;
   }
-  .section1 {
-    padding-left: 5%;
-    padding-right: 5%;
+  /* main */
+  main {
     padding: 0;
+  }
+  /* section1 */
+  .section1 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-right: 0;
-    background-image: none;
+    justify-content: flex-start;
+    padding-top: 100px;
+    padding-left: 0;
+    height: 600px;
+    width: 100%;
+    background: none;
   }
+  /* gérer l'image en fond */
   .section1 h1 {
     text-align: center;
   }
@@ -433,27 +441,58 @@ justify-content: center;
     align-items: center;
     justify-content: center;
   }
-  .boutonSection1 .boutonRouge{
-    padding: 15px 250px 15px 250px;
-  }
-  .boutonSection1 .boutonBlanc2{
-    padding: 15px 260px 15px 260px;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.section1 .boutonSection1 {
+  width: 100%;
+}
+.boutonSection1 .boutonBlanc2 {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.boutonSection1 .boutonRouge {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+/* section2 */
+.laptopOnly {
+  display: none;
+}
+.section2 {
+  width: 100%;
+  padding: 0;
+  height: 600px;
+}
+.section2 h2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+.carré {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.section2 article {
+  padding-top: 30px;
+  width: 100%;
+}
+/* sectionRouge */
+.sectionRed{
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+/* changer ordre a faire */
+.mobileOrder {
+  order: 2;
+}
+.sectionRed h3 {
+ text-align: center; 
+}
+.sectionRed p {
+text-align: center;
+}
 
 
 
