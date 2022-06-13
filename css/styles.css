@@ -16,7 +16,6 @@ header {
   padding-right: 7%;
 }
 nav {
-  width: 48%;
   display: flex;
   justify-content: flex-end;
   gap: 30px;
